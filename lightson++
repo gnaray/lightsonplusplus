@@ -264,7 +264,7 @@ delayScreensaver() {
 }
 
 help() {
-    echo "USAGE:    $ lighsonplusplus [FLAG1 ARG1] ... [FLAGn ARGn]"
+    echo "USAGE:    $ lightsonplusplus [FLAG1 ARG1] ... [FLAGn ARGn]"
     echo "FLAGS (ARGUMENTS must be 0 or 1, except stated otherwise):"
     echo ""
     echo "  -d,  --delay             Time interval in minutes, default is 1 min"
