@@ -1,6 +1,6 @@
 Tools:
-lightson+ daemon which checks if screensaver should be inhibited
-lightson+cmd tool which inhibits screensaver manually
+lightson++ daemon which checks if screensaver should be inhibited
+lightson++cmd tool which inhibits screensaver manually
 
 This program is based on:
 https://github.com/devkral/lightsonplus.git

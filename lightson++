@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# lightson+
+# lightson++
 
 # Copyright (c) 2018 spinal.by at gmail com
 # Copyright (c) 2014 devkral at web de
@@ -17,7 +17,7 @@
 # One of {x, k, gnome-}screensaver must be installed.
 
 # HOW TO USE:
-# "./lightson+ -d 2 &" will check every 2 minutes if Mplayer, VLC, Firefox or
+# "./lightson++ -d 2 &" will check every 2 minutes if Mplayer, VLC, Firefox or
 # Chromium are fullscreen and delay screensaver and Power Management if so.
 # If you don't pass an argument, the checks are done every minute.
 
@@ -260,7 +260,7 @@ delayScreensaver() {
 }
 
 help() {
-    echo "USAGE:    $ lighsonplus [FLAG1 ARG1] ... [FLAGn ARGn]"
+    echo "USAGE:    $ lighsonplusplus [FLAG1 ARG1] ... [FLAGn ARGn]"
     echo "FLAGS (ARGUMENTS must be 0 or 1, except stated otherwise):"
     echo ""
     echo "  -d,  --delay             Time interval in minutes, default is 1 min"
@@ -331,7 +331,7 @@ done
 
 # Convert delay to seconds. We substract 10 for assurance.
 delay=$[delay*60-10]
-echo "Start lightson+ mainloop"
+echo "Start lightson++ mainloop"
 while true; do
     [ -f "$inhibitfile" ] && delayScreensaver || checkFullscreen
     sleep $delay
