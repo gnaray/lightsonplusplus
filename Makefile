@@ -1,9 +1,10 @@
-SCRIPT = lightson+
+SCRIPT = lightson++
 DEST ?= /usr/local/bin/
 
 install:
 	@echo "Installing..."
-	install -m 777 -o root -g root $(SCRIPT) $(DEST)
+	install -m 755 -o root -g root "$(SCRIPT)" "$(DEST)"
 
 uninstall:
-	rm -vi $(DEST)$(SCRIPT)
+	@echo "Unnstalling..."
+	rm -vi "$(DEST)$(SCRIPT)"
